@@ -1,0 +1,68 @@
+<div class="calc-view">
+        <h5 class="center">Eligibility Calculator</h5>
+  <div class="row">
+    <div class="col-lg-12">
+            <div class="form-group">
+                    <div class="col-md-12" class="alignText">
+                      <span class="fontClass">
+                        Monthly Income
+                      </span>
+                      <span class="fontWeightClass">
+                           {{'₹' +incomeValue}}
+                      </span>
+                    </div>
+                      <mat-slider [min]="100000" [max]="300000" thumbLabelvalue="1" [value]="incomeValue" (change)="onSliderIncomeChange($event)" ></mat-slider>
+                       <div class="alignRowText">
+                            <span class="fontWeightClass">₹ 100000</span>
+                            <span class="fontWeightClass">₹ 300000</span>
+                       </div>
+                     
+            </div>
+            <div class="form-group">
+                    <div class="col-md-12" class="alignText">
+                      <span class="fontClass">
+                        Monthly Expense
+                      </span>
+                      <span class="fontWeightClass">
+                           {{'₹' +expenseValue}}
+                      </span>
+                    </div>
+                      <mat-slider [min]="10000" [max]="100000" thumbLabelvalue="1" [value]="expenseValue" (change)="onSliderExpenseChange($event)" ></mat-slider>
+            </div>
+            <div class="form-group">
+                    <div class="col-md-12" class="alignText">
+                      <span class="fontClass">
+                        Repayment Tenure
+                      </span>
+                      <mat-form-field appearance="fill">
+                              <mat-label>Choose an option</mat-label>
+                              <mat-select>
+                                <mat-option value="option1" selected>3 Months</mat-option>
+                                <mat-option value="option2" disabled>6 Months</mat-option>
+                                <mat-option value="option3">9 Months</mat-option>
+                                <mat-option value="option3">12 Months</mat-option>
+                              </mat-select>
+                    </mat-form-field>
+                     
+                    </div>
+            </div>
+            <div class="form-group">
+                <span class="fontClass"> Do you have any existing loans?</span>
+                    <mat-slide-toggle [style.color]="'#'+663399"
+                    class="rightAlign">
+                    </mat-slide-toggle>
+            </div>
+            <div class="form-group">
+                    <label class="fontClass alignText">EMI of Existing loans(Optional)</label>
+                    <mat-form-field [style.width]="100+'%'">
+                            <!-- <mat-label>EMI of Existing loans(Optional)</mat-label> -->
+                            <input matInput type="text" value="₹ 15,000">
+                            <button mat-button matSuffix mat-icon-button aria-label="Clear">
+                            <mat-icon>close</mat-icon>
+                            </button>
+                    </mat-form-field>
+            </div>
+    </div>
+    
+
+</div>

@@ -1,0 +1,12 @@
+
+    <!-- <button  mat-button type="button" class= "primary">{{label}}</button> -->
+
+    <button [ngClass]="classList" type="button"
+class="btn wide-btn"
+[style.font-size]="fontSize"
+[style.width]="width"
+[style.height]="height"
+[style.color]="color"
+[style.justify-content]="textAlign">
+{{label}}
+</button>

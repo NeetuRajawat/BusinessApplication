@@ -1,0 +1,38 @@
+.wide-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+    font-weight: 400;
+    font-size: 11px;
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 7px 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border: none;
+    }
+    .button-text{
+    margin-left: 15px;
+    }
+   
+    // .border-white{
+    // border: 1px solid #ffffff;
+    // }
+    .borderClass{
+        border: 1px solid #663399;
+    }
+    .purple-back{
+        background-color: #9f70cb;
+    
+    }
+    .white-back{
+        background-color: white;
+    
+    }
+    .grey-back{
+        background-color:grey;
+    
+    }
+    
