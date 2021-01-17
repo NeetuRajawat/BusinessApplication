@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class EligibilityCalcComponent implements OnInit {
   incomeValue:number=0;
   expenseValue:number=0;
+  selectedOption:string;
   constructor() { }
 
   ngOnInit() {
-   
+    this.selectedOption="6 Months";
   }
   onSliderIncomeChange(event){
       this.incomeValue=event.value;

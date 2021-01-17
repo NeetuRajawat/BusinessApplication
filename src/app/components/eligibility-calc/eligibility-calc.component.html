@@ -35,12 +35,11 @@
                         Repayment Tenure
                       </span>
                       <mat-form-field appearance="fill">
-                              <mat-label>Choose an option</mat-label>
-                              <mat-select>
-                                <mat-option value="option1" selected>3 Months</mat-option>
-                                <mat-option value="option2" disabled>6 Months</mat-option>
-                                <mat-option value="option3">9 Months</mat-option>
-                                <mat-option value="option3">12 Months</mat-option>
+                              <mat-select [value]="selectedOption">
+                                <mat-option value="3 Months">3 Months</mat-option>
+                                <mat-option value="6 Months">6 Months</mat-option>
+                                <mat-option value="9 Months">9 Months</mat-option>
+                                <mat-option value="12 Months">12 Months</mat-option>
                               </mat-select>
                     </mat-form-field>
                      

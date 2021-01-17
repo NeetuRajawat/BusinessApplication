@@ -15,6 +15,10 @@
 .pd-5{
     padding: 7px;
 }   
+.imgLogo{
+    width: 55px;
+    height: 55px;
+}
 .upperContainer{
     //width: 100%;
    // height: 800px;
@@ -52,10 +56,6 @@
         margin: -6px 314px;
         position: absolute;
     }
-    .imgLogo{
-        width: 55px;
-        height: 40px;
-    }
 }
 .lowerContainer{
     margin-top: 50px;
@@ -63,6 +63,9 @@
     height: 800px;
     display: flex;
     justify-content: space-around;
+    .waveBgImage{
+        background-image: transparent url('../assets/images/sol_wave_bg.png') 0% 0% no-repeat padding-box;
+    }
     .left{
         display: flex;
         flex-direction: column;
