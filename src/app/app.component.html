@@ -1,4 +1,7 @@
 <ng-container>
+     <div class="bgCircle" [style.backgroundImage]="'url(/../../assets/images/circle.png)'">
+        
+    
   <nav class="navbar navbar-expand-md navbar-light">
    <div class="collapse navbar-collapse" id="navbarNav">
      <ul>
@@ -26,7 +29,7 @@
     </div>
 </nav>
  
-    <div class="upperContainer">
+    <div class="upperContainer" [style.backgroundImage]="'url(/../../assets/images/circle.png)'">
         
       <div class="topLeftDiv">
         <h1 class="leftHeader mb-0">We make it Super <p class="mb-0">Simple</p></h1>
@@ -41,7 +44,7 @@
           </div>
       </div>
     </div>
-    <div  class="left">
+    <div class="left">
         <app-eligibility-calc></app-eligibility-calc>
         <div>
             <img class="rightBottomClass" src="assets/images/accounting_dots.png">
@@ -51,12 +54,14 @@
         <app-loan-amount></app-loan-amount>
     </div>
   </div>
-  
+</div> 
 </ng-container>
 
 <ng-container>
-  <div class="lowerContainer">
-       
+  <div class="lowerContainer" [style.backgroundImage]="'url(/../../assets/images/sol_wave_bg.png)'">
+        <!-- <div [style.backgroundImage]="'url(/../../assets/images/sol_wave_bg.png)'"> -->
+            <!-- <div [ngStyle]="{background-image: 'url(/../../assets/images/sol_wave_bg.png);'}">
+         </div> -->
     <div class="left">
         <app-common-card 
           description="Get terms loans that your business needs within 72 hours" 
@@ -97,4 +102,7 @@ Get your hand on a term loans that's crafted for your business
  </div>
     
 </ng-container>
+
+
+
 <router-outlet></router-outlet>

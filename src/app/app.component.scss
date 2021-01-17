@@ -6,7 +6,13 @@
     //background: transparent url('images/collect_img/video.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-
+.bgCircle{
+background-image: url(/../../assets/images/circle.png);
+background-repeat: no-repeat !important;
+background-size: contain;
+background-position-x: 750px;
+background-position-y: -100px;
+} 
 .btnClass{
     display: flex;
     flex-direction: row;
@@ -22,12 +28,18 @@
 .upperContainer{
     //width: 100%;
    // height: 800px;
+   background-image: transparent url('/../../assets/images/sol_wave_bg.png') 0% 0% no-repeat padding-box;
+           background-size: contain;
+    background-position-x: -117px;
+    background-position-y: 7px;
+    background-repeat: no-repeat !important;
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
     padding: 0px 50px;
     .topLeftDiv{
            width: 55%;
+          
     }
     .blackDivider{
         height: 6px;
@@ -64,7 +76,10 @@
     display: flex;
     justify-content: space-around;
     .waveBgImage{
-        background-image: transparent url('../assets/images/sol_wave_bg.png') 0% 0% no-repeat padding-box;
+        background-image: transparent url('/../../assets/images/sol_wave_bg.png') 0% 0% no-repeat padding-box;
+        background-size: 100%;  
+        background-size: cover;  
+        height: 650 px;  
     }
     .left{
         display: flex;
